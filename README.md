@@ -18,7 +18,8 @@ from each of the web server.
 
 
 ## Below are the list of resources this module creates.
-* A new VPC in us-east-1 region.
+* A new VPC in us-east-1 or us-east-2 regions (choice is made in the terraform.tfvars file).
+* Could use terraform.tfvars file for changing the vpc and subnet cidrs as required per the environment.
 * Three subnets in the new VPC in 3 different availability zones of the same region.
 * A new Internet Gateway attached to the new VPC created.
 * 2 Security Groups one for elastic loadbalancer deployment and one for launch configuration deployment.

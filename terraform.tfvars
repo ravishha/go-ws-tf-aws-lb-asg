@@ -1,5 +1,7 @@
 aws_region = "us-east-1"
 
+keypair_name = "all_instances_keypair1"
+
 vpc_cidrs = "10.125.0.0/16"
 
 vpc_private_subneta = "10.125.0.0/26"

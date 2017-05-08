@@ -17,6 +17,20 @@ from each of the web server.
 * Please use the names of the keypairs to use in each of these 2 regions (update keypair_name field in the file vars.tf).
 
 
+##Below are the list of variables in the "terraform.tfvars file" that could be modified as required according to the individual environments
+aws_region = "us-east-1"
+
+keypair_name = "all_instances_keypair1"
+
+vpc_cidrs = "10.125.0.0/16"
+
+vpc_private_subneta = "10.125.0.0/26"
+
+vpc_private_subnetb =  "10.125.0.64/26"
+
+vpc_private_subnetc =  "10.125.0.128/26"
+
+
 ## Below are the list of resources this module creates.
 * A new VPC in us-east-1 or us-east-2 regions (choice is made in the terraform.tfvars file).
 * Could use terraform.tfvars file for changing the vpc and subnet cidrs as required per the environment.
